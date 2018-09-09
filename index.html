@@ -9,40 +9,396 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <div id="intro">
-    <img src="tiger.jpg" alt="">
-    <div id="basic_info">
-        <p id="name"><strong>Mr. Tiger</strong></p>
+    <div id="user_profile">
+    <div id="intro" class ="row">
+    <div class="col l4 m4 s12"><img id="dp" src="tiger.jpg"></div>
+    <div class="col l8 m8 s12" id="basic_info">
+        <p id="name">Mr. Tiger</p>
         <p id="tagline">Known as "Webmaster"</p>
-        <p id="jobs">Full Stack Web Deveoper || Teacher || Open Source Enthusiast || Motivational Speaker</p>
+        <p id="jobs">Full Stack Web Developer || Teacher || Open Source Enthusiast || Motivational Speaker</p>
         <div id="follow_option">
-            <i class="fa fa-user-plus"></i> Follow
+            <button id="fbu"><i class="fa fa-user-plus"></i> Follow</button>
         </div>
         <div id="ask_question">
-            <i class="fa fa-question"></i> Ask question
+            <button id="abu"><i class="fa fa-question"></i> Ask question</button>
         </div>
     </div>
+    </div>
+    <div id="question_box">
+        Question: <textarea cols="30" rows="10"></textarea>
+        <button id="ask">Submit</button>
+        <h4 id="thank_you">Thank you</h1>
+        <hr>
     </div>
     <div id="full_profile">
         <div class="row">
-        <div id="feeds" class="col s3">
-            <h5>Feeds</h5>
-            <p>Articles</p>
-            <p>Projects</p>
-            <p>Forums</p>
+        <div id="feeds" class="col l2 m2 s12">
+            <h5><u>Feeds</u></h5>
+            <p id="feed_articles" class="feed_item">Articles</p>
+            <p id="feed_projects" class="feed_item">Projects</p>
+            <p id="feed_questions" class="feed_item">Questions</p>
         </div>
-        <div id="articles" class="col s6">
-            <p>Here the articles</p>
+        <div id="matter" class="col l7 m7 s12">
+            <!-- Articles -->
+            <div id="articles">
+                <h3>Articles</h3>
+                <hr>
+                <div id="article1">
+                    <h4>Blockchain Fundamentals</h4>
+                    <div class="row">
+                        <div class="col s2">
+                            <img src="tiger.jpg" class="article_author">
+                        </div>
+                        <div class="col s10">
+                            <p class="author_name">Mr. Tiger</p>
+                            <p>Published 15h ago</p>
+                        </div>  
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, mattis nulla pede dolor vehicula, et egestas et taciti mauris et, nibh dolor elementum eu et
+                    tincidunt, mollis mi. Est dolor ac velit, pellentesque ultricies in eleifend proin magna, nam erat cras justo diam mauris.
+                    Lectus sed at non ut, eget rutrum vulputate consequatur, dignissim vestibulum mattis convallis. Id iaculis libero rutrum,
+                    a iaculis metus dapibus vestibulum, nam dictum molestias praesent. Vel lacus, praesent wisi velit ac sem nunc. Ut ipsum sed,
+                    commodo ante scelerisque posuere amet hymenaeos, eu arcu at montes hendrerit, vel quis ut eu, arcu ante dolor donec lacus.
+                    Augue varius nulla eget quisque dolor ac, quis eleifend nunc amet, ut ac facilisis sit. Ultricies pellentesque ante aliquet,
+                    vel amet, sed nam, libero justo diam eu et. Varius sed fusce purus, nonummy pellentesque eu risus. <br> nunc eu arcu sit in,
+                    tristique laoreet tellus erat velit, sed wisi imperdiet et lacus sapien sed, sapien vitae scelerisque ante, nascetur erat
+                    fringilla. Sit eros laoreet, mauris ultrices, nobis odio lobortis. Posuere proin mi libero penatibus, dui dictumst diam est
+                    mi lacus, ut nunc quis quaerat, fermentum dapibus deserunt duis in ante fusce. Varius amet velit porttitor, mollis ipsum
+                    ultrices inceptos cras vel, aliquam nisl vehicula, aliquet magnis. Eget ut et, curabitur proin nam sed sit, consectetuer
+                    vehicula vel laoreet cubilia, sapien neque sed hac ante eu a, varius cras fringilla.<br> In integer natoque pulvinar, nam praesent
+                    ridiculus volutpat. Nulla diam massa et, odio tristique id molestie sodales, ut elit nunc non amet et, iaculis vehicula duis
+                    magna semper, arcu placerat sem. Feugiat eu dui ut, id nunc. Aliquam felis ullamcorper lobortis convallis amet, a dignissim
+                    orci diam, nonummy dui sociis, commodo ante nec arcu sed, diam tellus eos. Felis eget donec. Dolor at, porta rutrum leo cursus
+                    nulla, justo augue felis ac dictumst lectus. Consequat amet sit integer dolore, eget rhoncus phasellus, orci dui aliquam
+                    diam varius quis, molestie duis ut integer augue, curabitur ligula ipsum. Euismod massa leo sed potenti varius. Magna wisi
+                    egestas aliquam lectus veniam. Pede nonummy eros nulla, leo nec, risus nec vel quam, adipiscing posuere est ante. Lacinia
+                    amet per, donec lectus sem, justo non ante erat, ultrices libero. Voluptatem potenti sed morbi inceptos erat at.</p>
+                    <br>
+                    <button class="like_button">Like</button>
+                </div>
+                <hr>
+                <div id="article2">
+                    <h4>
+                        Artificial Intelligence
+                    </h4>
+                    <div class="row">
+                        <div class="col s2">
+                            <img src="tiger.jpg" class="article_author">
+                        </div>
+                        <div class="col s10">
+                            <p class="author_name">Mr. Tiger</p>
+                            <p>Published 3 days ago</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, mattis nulla pede dolor vehicula, et egestas et taciti mauris et, nibh dolor elementum eu
+                        et tincidunt, mollis mi. Est dolor ac velit, pellentesque ultricies in eleifend proin magna, nam erat cras justo
+                        diam mauris. Lectus sed at non ut, eget rutrum vulputate consequatur, dignissim vestibulum mattis convallis. Id iaculis
+                        libero rutrum, a iaculis metus dapibus vestibulum, nam dictum molestias praesent. Vel lacus, praesent wisi velit
+                        ac sem nunc. Ut ipsum sed, commodo ante scelerisque posuere amet hymenaeos, eu arcu at montes hendrerit, vel quis
+                        ut eu, arcu ante dolor donec lacus. Augue varius nulla eget quisque dolor ac, quis eleifend nunc amet, ut ac facilisis
+                        sit. Ultricies pellentesque ante aliquet, vel amet, sed nam, libero justo diam eu et. Varius sed fusce purus, nonummy
+                        pellentesque eu risus.
+                        <br> nunc eu arcu sit in, tristique laoreet tellus erat velit, sed wisi imperdiet et lacus sapien sed, sapien vitae scelerisque
+                        ante, nascetur erat fringilla. Sit eros laoreet, mauris ultrices, nobis odio lobortis. Posuere proin mi libero penatibus,
+                        dui dictumst diam est mi lacus, ut nunc quis quaerat, fermentum dapibus deserunt duis in ante fusce. Varius amet
+                        velit porttitor, mollis ipsum ultrices inceptos cras vel, aliquam nisl vehicula, aliquet magnis. Eget ut et, curabitur
+                        proin nam sed sit, consectetuer vehicula vel laoreet cubilia, sapien neque sed hac ante eu a, varius cras fringilla.
+                        <br> In integer natoque pulvinar, nam praesent ridiculus volutpat. Nulla diam massa et, odio tristique id molestie sodales,
+                        ut elit nunc non amet et, iaculis vehicula duis magna semper, arcu placerat sem. Feugiat eu dui ut, id nunc. Aliquam
+                        felis ullamcorper lobortis convallis amet, a dignissim orci diam, nonummy dui sociis, commodo ante nec arcu sed,
+                        diam tellus eos. Felis eget donec. Dolor at, porta rutrum leo cursus nulla, justo augue felis ac dictumst lectus.
+                        Consequat amet sit integer dolore, eget rhoncus phasellus, orci dui aliquam diam varius quis, molestie duis ut integer
+                        augue, curabitur ligula ipsum. Euismod massa leo sed potenti varius. Magna wisi egestas aliquam lectus veniam. Pede
+                        nonummy eros nulla, leo nec, risus nec vel quam, adipiscing posuere est ante. Lacinia amet per, donec lectus sem,
+                        justo non ante erat, ultrices libero. Voluptatem potenti sed morbi inceptos erat at.</p>
+                        <br>
+                        <button class="like_button">Like</button>
+                </div>
+                <hr>
+                <div id="article3">
+                    <h4>
+                        Web Development
+                    </h4>
+                    <div class="row">
+                        <div class="col s2">
+                            <img src="tiger.jpg" class="article_author">
+                        </div>
+                        <div class="col s10">
+                            <p class="author_name">Mr. Tiger</p>
+                            <p>Published 5 months ago</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, mattis nulla pede dolor vehicula, et egestas et taciti mauris et, nibh dolor elementum eu
+                        et tincidunt, mollis mi. Est dolor ac velit, pellentesque ultricies in eleifend proin magna, nam erat cras justo
+                        diam mauris. Lectus sed at non ut, eget rutrum vulputate consequatur, dignissim vestibulum mattis convallis. Id iaculis
+                        libero rutrum, a iaculis metus dapibus vestibulum, nam dictum molestias praesent. Vel lacus, praesent wisi velit
+                        ac sem nunc. Ut ipsum sed, commodo ante scelerisque posuere amet hymenaeos, eu arcu at montes hendrerit, vel quis
+                        ut eu, arcu ante dolor donec lacus. Augue varius nulla eget quisque dolor ac, quis eleifend nunc amet, ut ac facilisis
+                        sit. Ultricies pellentesque ante aliquet, vel amet, sed nam, libero justo diam eu et. Varius sed fusce purus, nonummy
+                        pellentesque eu risus.
+                        <br> nunc eu arcu sit in, tristique laoreet tellus erat velit, sed wisi imperdiet et lacus sapien sed, sapien vitae scelerisque
+                        ante, nascetur erat fringilla. Sit eros laoreet, mauris ultrices, nobis odio lobortis. Posuere proin mi libero penatibus,
+                        dui dictumst diam est mi lacus, ut nunc quis quaerat, fermentum dapibus deserunt duis in ante fusce. Varius amet
+                        velit porttitor, mollis ipsum ultrices inceptos cras vel, aliquam nisl vehicula, aliquet magnis. Eget ut et, curabitur
+                        proin nam sed sit, consectetuer vehicula vel laoreet cubilia, sapien neque sed hac ante eu a, varius cras fringilla.
+                        <br> In integer natoque pulvinar, nam praesent ridiculus volutpat. Nulla diam massa et, odio tristique id molestie sodales,
+                        ut elit nunc non amet et, iaculis vehicula duis magna semper, arcu placerat sem. Feugiat eu dui ut, id nunc. Aliquam
+                        felis ullamcorper lobortis convallis amet, a dignissim orci diam, nonummy dui sociis, commodo ante nec arcu sed,
+                        diam tellus eos. Felis eget donec. Dolor at, porta rutrum leo cursus nulla, justo augue felis ac dictumst lectus.
+                        Consequat amet sit integer dolore, eget rhoncus phasellus, orci dui aliquam diam varius quis, molestie duis ut integer
+                        augue, curabitur ligula ipsum. Euismod massa leo sed potenti varius. Magna wisi egestas aliquam lectus veniam. Pede
+                        nonummy eros nulla, leo nec, risus nec vel quam, adipiscing posuere est ante. Lacinia amet per, donec lectus sem,
+                        justo non ante erat, ultrices libero. Voluptatem potenti sed morbi inceptos erat at.</p>
+                        <br>
+                        <button class="like_button">Like</button>
+                </div>
+                <hr>
+            </div>
+            <!-- Projects -->
+            <div id="projects">
+                <h3>Projects</h3>
+                <hr>
+                <div id="project1">
+                    <h4>Calamity Predictor</h4>
+                    <div class="row">
+                        <div class="col s2">
+                            <img src="tiger.jpg" class="article_author">
+                        </div>
+                        <div class="col s10">
+                            <p class="author_name">Mr. Tiger</p>
+                            <p>Published 15h ago</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, mattis nulla pede dolor vehicula, et egestas et taciti mauris et, nibh dolor elementum eu
+                        et tincidunt, mollis mi. Est dolor ac velit, pellentesque ultricies in eleifend proin magna, nam erat cras justo
+                        diam mauris. Lectus sed at non ut, eget rutrum vulputate consequatur, dignissim vestibulum mattis convallis. Id iaculis
+                        libero rutrum, a iaculis metus dapibus vestibulum, nam dictum molestias praesent. Vel lacus, praesent wisi velit
+                        ac sem nunc. Ut ipsum sed, commodo ante scelerisque posuere amet hymenaeos, eu arcu at montes hendrerit, vel quis
+                        ut eu, arcu ante dolor donec lacus. Augue varius nulla eget quisque dolor ac, quis eleifend nunc amet, ut ac facilisis
+                        sit. Ultricies pellentesque ante aliquet, vel amet, sed nam, libero justo diam eu et. Varius sed fusce purus, nonummy
+                        pellentesque eu risus.
+                        <br> nunc eu arcu sit in, tristique laoreet tellus erat velit, sed wisi imperdiet et lacus sapien sed, sapien vitae scelerisque
+                        ante, nascetur erat fringilla. Sit eros laoreet, mauris ultrices, nobis odio lobortis. Posuere proin mi libero penatibus,
+                        dui dictumst diam est mi lacus, ut nunc quis quaerat, fermentum dapibus deserunt duis in ante fusce. Varius amet
+                        velit porttitor, mollis ipsum ultrices inceptos cras vel, aliquam nisl vehicula, aliquet magnis. Eget ut et, curabitur
+                        proin nam sed sit, consectetuer vehicula vel laoreet cubilia, sapien neque sed hac ante eu a, varius cras fringilla.
+                        <br> In integer natoque pulvinar, nam praesent ridiculus volutpat. Nulla diam massa et, odio tristique id molestie sodales,
+                        ut elit nunc non amet et, iaculis vehicula duis magna semper, arcu placerat sem. Feugiat eu dui ut, id nunc. Aliquam
+                        felis ullamcorper lobortis convallis amet, a dignissim orci diam, nonummy dui sociis, commodo ante nec arcu sed,
+                        diam tellus eos. Felis eget donec. Dolor at, porta rutrum leo cursus nulla, justo augue felis ac dictumst lectus.
+                        Consequat amet sit integer dolore, eget rhoncus phasellus, orci dui aliquam diam varius quis, molestie duis ut integer
+                        augue, curabitur ligula ipsum. Euismod massa leo sed potenti varius. Magna wisi egestas aliquam lectus veniam. Pede
+                        nonummy eros nulla, leo nec, risus nec vel quam, adipiscing posuere est ante. Lacinia amet per, donec lectus sem,
+                        justo non ante erat, ultrices libero. Voluptatem potenti sed morbi inceptos erat at.</p>
+                        <h5>Github Link: <a href="https:google.com" target="_blank">Some link(Here google.com)</a></h5>
+                </div>
+                <hr>
+                <div id="project2">
+                    <h4>
+                        Education for blind
+                    </h4>
+                    <div class="row">
+                        <div class="col s2">
+                            <img src="tiger.jpg" class="article_author">
+                        </div>
+                        <div class="col s10">
+                            <p class="author_name">Mr. Tiger</p>
+                            <p>Published 3 days ago</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, mattis nulla pede dolor vehicula, et egestas et taciti mauris et, nibh dolor elementum eu
+                        et tincidunt, mollis mi. Est dolor ac velit, pellentesque ultricies in eleifend proin magna, nam erat cras justo
+                        diam mauris. Lectus sed at non ut, eget rutrum vulputate consequatur, dignissim vestibulum mattis convallis. Id iaculis
+                        libero rutrum, a iaculis metus dapibus vestibulum, nam dictum molestias praesent. Vel lacus, praesent wisi velit
+                        ac sem nunc. Ut ipsum sed, commodo ante scelerisque posuere amet hymenaeos, eu arcu at montes hendrerit, vel quis
+                        ut eu, arcu ante dolor donec lacus. Augue varius nulla eget quisque dolor ac, quis eleifend nunc amet, ut ac facilisis
+                        sit. Ultricies pellentesque ante aliquet, vel amet, sed nam, libero justo diam eu et. Varius sed fusce purus, nonummy
+                        pellentesque eu risus.
+                        <br> nunc eu arcu sit in, tristique laoreet tellus erat velit, sed wisi imperdiet et lacus sapien sed, sapien vitae scelerisque
+                        ante, nascetur erat fringilla. Sit eros laoreet, mauris ultrices, nobis odio lobortis. Posuere proin mi libero penatibus,
+                        dui dictumst diam est mi lacus, ut nunc quis quaerat, fermentum dapibus deserunt duis in ante fusce. Varius amet
+                        velit porttitor, mollis ipsum ultrices inceptos cras vel, aliquam nisl vehicula, aliquet magnis. Eget ut et, curabitur
+                        proin nam sed sit, consectetuer vehicula vel laoreet cubilia, sapien neque sed hac ante eu a, varius cras fringilla.
+                        <br> In integer natoque pulvinar, nam praesent ridiculus volutpat. Nulla diam massa et, odio tristique id molestie sodales,
+                        ut elit nunc non amet et, iaculis vehicula duis magna semper, arcu placerat sem. Feugiat eu dui ut, id nunc. Aliquam
+                        felis ullamcorper lobortis convallis amet, a dignissim orci diam, nonummy dui sociis, commodo ante nec arcu sed,
+                        diam tellus eos. Felis eget donec. Dolor at, porta rutrum leo cursus nulla, justo augue felis ac dictumst lectus.
+                        Consequat amet sit integer dolore, eget rhoncus phasellus, orci dui aliquam diam varius quis, molestie duis ut integer
+                        augue, curabitur ligula ipsum. Euismod massa leo sed potenti varius. Magna wisi egestas aliquam lectus veniam. Pede
+                        nonummy eros nulla, leo nec, risus nec vel quam, adipiscing posuere est ante. Lacinia amet per, donec lectus sem,
+                        justo non ante erat, ultrices libero. Voluptatem potenti sed morbi inceptos erat at.</p>
+                        <h5>Github Link:
+                            <a href="https:google.com" target="_blank">Some link(Here google.com)</a>
+                        </h5>
+                </div>
+                <hr>
+                <div id="project3">
+                    <h4>
+                        Cab Share App
+                    </h4>
+                    <div class="row">
+                        <div class="col s2">
+                            <img src="tiger.jpg" class="article_author">
+                        </div>
+                        <div class="col s10">
+                            <p class="author_name">Mr. Tiger</p>
+                            <p>Published 5 months ago</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, mattis nulla pede dolor vehicula, et egestas et taciti mauris et, nibh dolor elementum eu
+                        et tincidunt, mollis mi. Est dolor ac velit, pellentesque ultricies in eleifend proin magna, nam erat cras justo
+                        diam mauris. Lectus sed at non ut, eget rutrum vulputate consequatur, dignissim vestibulum mattis convallis. Id iaculis
+                        libero rutrum, a iaculis metus dapibus vestibulum, nam dictum molestias praesent. Vel lacus, praesent wisi velit
+                        ac sem nunc. Ut ipsum sed, commodo ante scelerisque posuere amet hymenaeos, eu arcu at montes hendrerit, vel quis
+                        ut eu, arcu ante dolor donec lacus. Augue varius nulla eget quisque dolor ac, quis eleifend nunc amet, ut ac facilisis
+                        sit. Ultricies pellentesque ante aliquet, vel amet, sed nam, libero justo diam eu et. Varius sed fusce purus, nonummy
+                        pellentesque eu risus.
+                        <br> nunc eu arcu sit in, tristique laoreet tellus erat velit, sed wisi imperdiet et lacus sapien sed, sapien vitae scelerisque
+                        ante, nascetur erat fringilla. Sit eros laoreet, mauris ultrices, nobis odio lobortis. Posuere proin mi libero penatibus,
+                        dui dictumst diam est mi lacus, ut nunc quis quaerat, fermentum dapibus deserunt duis in ante fusce. Varius amet
+                        velit porttitor, mollis ipsum ultrices inceptos cras vel, aliquam nisl vehicula, aliquet magnis. Eget ut et, curabitur
+                        proin nam sed sit, consectetuer vehicula vel laoreet cubilia, sapien neque sed hac ante eu a, varius cras fringilla.
+                        <br> In integer natoque pulvinar, nam praesent ridiculus volutpat. Nulla diam massa et, odio tristique id molestie sodales,
+                        ut elit nunc non amet et, iaculis vehicula duis magna semper, arcu placerat sem. Feugiat eu dui ut, id nunc. Aliquam
+                        felis ullamcorper lobortis convallis amet, a dignissim orci diam, nonummy dui sociis, commodo ante nec arcu sed,
+                        diam tellus eos. Felis eget donec. Dolor at, porta rutrum leo cursus nulla, justo augue felis ac dictumst lectus.
+                        Consequat amet sit integer dolore, eget rhoncus phasellus, orci dui aliquam diam varius quis, molestie duis ut integer
+                        augue, curabitur ligula ipsum. Euismod massa leo sed potenti varius. Magna wisi egestas aliquam lectus veniam. Pede
+                        nonummy eros nulla, leo nec, risus nec vel quam, adipiscing posuere est ante. Lacinia amet per, donec lectus sem,
+                        justo non ante erat, ultrices libero. Voluptatem potenti sed morbi inceptos erat at.</p>
+                        <h5>Github Link:
+                            <a href="https:google.com" target="_blank">Some link(Here google.com)</a>
+                        </h5>
+                </div>
+                <hr>
+            </div>
+            <!-- Questions -->
+            <div id="questions">
+                <h3>Questions</h3>
+                <hr>
+                <div id="question1">
+                    <h4>How to start learning Artificial intelligence?</h4>
+                    <div class="row">
+                        <div class="col s2">
+                            <img src="tiger.jpg" class="article_author">
+                        </div>
+                        <div class="col s10">
+                            <p class="author_name">Mr. Tiger</p>
+                            <p>Answered 15h ago</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, mattis nulla pede dolor vehicula, et egestas et taciti mauris et, nibh dolor elementum eu
+                        et tincidunt, mollis mi. Est dolor ac velit, pellentesque ultricies in eleifend proin magna, nam erat cras justo
+                        diam mauris. Lectus sed at non ut, eget rutrum vulputate consequatur, dignissim vestibulum mattis convallis. Id iaculis
+                        libero rutrum, a iaculis metus dapibus vestibulum, nam dictum molestias praesent. Vel lacus, praesent wisi velit
+                        ac sem nunc. Ut ipsum sed, commodo ante scelerisque posuere amet hymenaeos, eu arcu at montes hendrerit, vel quis
+                        ut eu, arcu ante dolor donec lacus. Augue varius nulla eget quisque dolor ac, quis eleifend nunc amet, ut ac facilisis
+                        sit. Ultricies pellentesque ante aliquet, vel amet, sed nam, libero justo diam eu et. Varius sed fusce purus, nonummy
+                        pellentesque eu risus.
+                        <br> nunc eu arcu sit in, tristique laoreet tellus erat velit, sed wisi imperdiet et lacus sapien sed, sapien vitae scelerisque
+                        ante, nascetur erat fringilla. Sit eros laoreet, mauris ultrices, nobis odio lobortis. Posuere proin mi libero penatibus,
+                        dui dictumst diam est mi lacus, ut nunc quis quaerat, fermentum dapibus deserunt duis in ante fusce. Varius amet
+                        velit porttitor, mollis ipsum ultrices inceptos cras vel, aliquam nisl vehicula, aliquet magnis. Eget ut et, curabitur
+                        proin nam sed sit, consectetuer vehicula vel laoreet cubilia, sapien neque sed hac ante eu a, varius cras fringilla.
+                        <br> In integer natoque pulvinar, nam praesent ridiculus volutpat. Nulla diam massa et, odio tristique id molestie sodales,
+                        ut elit nunc non amet et, iaculis vehicula duis magna semper, arcu placerat sem. Feugiat eu dui ut, id nunc. Aliquam
+                        felis ullamcorper lobortis convallis amet, a dignissim orci diam, nonummy dui sociis, commodo ante nec arcu sed,
+                        diam tellus eos. Felis eget donec. Dolor at, porta rutrum leo cursus nulla, justo augue felis ac dictumst lectus.
+                        Consequat amet sit integer dolore, eget rhoncus phasellus, orci dui aliquam diam varius quis, molestie duis ut integer
+                        augue, curabitur ligula ipsum. Euismod massa leo sed potenti varius. Magna wisi egestas aliquam lectus veniam. Pede
+                        nonummy eros nulla, leo nec, risus nec vel quam, adipiscing posuere est ante. Lacinia amet per, donec lectus sem,
+                        justo non ante erat, ultrices libero. Voluptatem potenti sed morbi inceptos erat at.</p>
+                        <br>
+                    <button class="like_button">Like</button>
+                </div>
+                <hr>
+                <div id="question2">
+                    <h4>
+                        What is blockchain and why is it becoming so famous?
+                    </h4>
+                    <div class="row">
+                        <div class="col s2">
+                            <img src="tiger.jpg" class="article_author">
+                        </div>
+                        <div class="col s10">
+                            <p class="author_name">Mr. Tiger</p>
+                            <p>Answered 3 days ago</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, mattis nulla pede dolor vehicula, et egestas et taciti mauris et, nibh dolor elementum eu
+                        et tincidunt, mollis mi. Est dolor ac velit, pellentesque ultricies in eleifend proin magna, nam erat cras justo
+                        diam mauris. Lectus sed at non ut, eget rutrum vulputate consequatur, dignissim vestibulum mattis convallis. Id iaculis
+                        libero rutrum, a iaculis metus dapibus vestibulum, nam dictum molestias praesent. Vel lacus, praesent wisi velit
+                        ac sem nunc. Ut ipsum sed, commodo ante scelerisque posuere amet hymenaeos, eu arcu at montes hendrerit, vel quis
+                        ut eu, arcu ante dolor donec lacus. Augue varius nulla eget quisque dolor ac, quis eleifend nunc amet, ut ac facilisis
+                        sit. Ultricies pellentesque ante aliquet, vel amet, sed nam, libero justo diam eu et. Varius sed fusce purus, nonummy
+                        pellentesque eu risus.
+                        <br> nunc eu arcu sit in, tristique laoreet tellus erat velit, sed wisi imperdiet et lacus sapien sed, sapien vitae scelerisque
+                        ante, nascetur erat fringilla. Sit eros laoreet, mauris ultrices, nobis odio lobortis. Posuere proin mi libero penatibus,
+                        dui dictumst diam est mi lacus, ut nunc quis quaerat, fermentum dapibus deserunt duis in ante fusce. Varius amet
+                        velit porttitor, mollis ipsum ultrices inceptos cras vel, aliquam nisl vehicula, aliquet magnis. Eget ut et, curabitur
+                        proin nam sed sit, consectetuer vehicula vel laoreet cubilia, sapien neque sed hac ante eu a, varius cras fringilla.
+                        <br> In integer natoque pulvinar, nam praesent ridiculus volutpat. Nulla diam massa et, odio tristique id molestie sodales,
+                        ut elit nunc non amet et, iaculis vehicula duis magna semper, arcu placerat sem. Feugiat eu dui ut, id nunc. Aliquam
+                        felis ullamcorper lobortis convallis amet, a dignissim orci diam, nonummy dui sociis, commodo ante nec arcu sed,
+                        diam tellus eos. Felis eget donec. Dolor at, porta rutrum leo cursus nulla, justo augue felis ac dictumst lectus.
+                        Consequat amet sit integer dolore, eget rhoncus phasellus, orci dui aliquam diam varius quis, molestie duis ut integer
+                        augue, curabitur ligula ipsum. Euismod massa leo sed potenti varius. Magna wisi egestas aliquam lectus veniam. Pede
+                        nonummy eros nulla, leo nec, risus nec vel quam, adipiscing posuere est ante. Lacinia amet per, donec lectus sem,
+                        justo non ante erat, ultrices libero. Voluptatem potenti sed morbi inceptos erat at.</p>
+                        <br>
+                        <button class="like_button">Like</button>
+                </div>
+                <hr>
+                <div id="question3">
+                    <h4>
+                        What is Raspberry Pie?
+                    </h4>
+                    <div class="row">
+                        <div class="col s2">
+                            <img src="tiger.jpg" class="article_author">
+                        </div>
+                        <div class="col s10">
+                            <p class="author_name">Mr. Tiger</p>
+                            <p>Answered 5 months ago</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, mattis nulla pede dolor vehicula, et egestas et taciti mauris et, nibh dolor elementum eu
+                        et tincidunt, mollis mi. Est dolor ac velit, pellentesque ultricies in eleifend proin magna, nam erat cras justo
+                        diam mauris. Lectus sed at non ut, eget rutrum vulputate consequatur, dignissim vestibulum mattis convallis. Id iaculis
+                        libero rutrum, a iaculis metus dapibus vestibulum, nam dictum molestias praesent. Vel lacus, praesent wisi velit
+                        ac sem nunc. Ut ipsum sed, commodo ante scelerisque posuere amet hymenaeos, eu arcu at montes hendrerit, vel quis
+                        ut eu, arcu ante dolor donec lacus. Augue varius nulla eget quisque dolor ac, quis eleifend nunc amet, ut ac facilisis
+                        sit. Ultricies pellentesque ante aliquet, vel amet, sed nam, libero justo diam eu et. Varius sed fusce purus, nonummy
+                        pellentesque eu risus.
+                        <br> nunc eu arcu sit in, tristique laoreet tellus erat velit, sed wisi imperdiet et lacus sapien sed, sapien vitae scelerisque
+                        ante, nascetur erat fringilla. Sit eros laoreet, mauris ultrices, nobis odio lobortis. Posuere proin mi libero penatibus,
+                        dui dictumst diam est mi lacus, ut nunc quis quaerat, fermentum dapibus deserunt duis in ante fusce. Varius amet
+                        velit porttitor, mollis ipsum ultrices inceptos cras vel, aliquam nisl vehicula, aliquet magnis. Eget ut et, curabitur
+                        proin nam sed sit, consectetuer vehicula vel laoreet cubilia, sapien neque sed hac ante eu a, varius cras fringilla.
+                        <br> In integer natoque pulvinar, nam praesent ridiculus volutpat. Nulla diam massa et, odio tristique id molestie sodales,
+                        ut elit nunc non amet et, iaculis vehicula duis magna semper, arcu placerat sem. Feugiat eu dui ut, id nunc. Aliquam
+                        felis ullamcorper lobortis convallis amet, a dignissim orci diam, nonummy dui sociis, commodo ante nec arcu sed,
+                        diam tellus eos. Felis eget donec. Dolor at, porta rutrum leo cursus nulla, justo augue felis ac dictumst lectus.
+                        Consequat amet sit integer dolore, eget rhoncus phasellus, orci dui aliquam diam varius quis, molestie duis ut integer
+                        augue, curabitur ligula ipsum. Euismod massa leo sed potenti varius. Magna wisi egestas aliquam lectus veniam. Pede
+                        nonummy eros nulla, leo nec, risus nec vel quam, adipiscing posuere est ante. Lacinia amet per, donec lectus sem,
+                        justo non ante erat, ultrices libero. Voluptatem potenti sed morbi inceptos erat at.</p>
+                        <br>
+                        <button class="like_button">Like</button>
+                </div>
+                <hr>
+            </div>
         </div>
-        <div id="info" class="col s3">
+        <div id="info" class="col l3 m3 s12">
             <u><h5>Credentials and Highlights</h5></u>
-            <i class="fa fa-briefcase"></i>CEO at Codepark
+            <i class="fa fa-briefcase"></i> CEO at Codepark
             <br>2018-present
             <br><br>
-            <i class="fa fa-graduation-cap"></i>Studied Computer Science and Engineering
+            <i class="fa fa-graduation-cap"></i> Studied Computer Science and Engineering
             <br>Vellore Institute of Technology, Vellore
             <br><br>
-            <i class="fa fa-map-marker-alt"></i>Lives in New Delhi
+            <i class="fa fa-map-marker-alt"></i> Lives in New Delhi
             <br><br>
             <u><h5>Knows</h5></u>
             <p>JavaScript</p>
@@ -50,6 +406,7 @@
             <p>Java</p>
         </div>
         </div>
+    </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

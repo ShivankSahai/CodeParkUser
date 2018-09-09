@@ -1,21 +1,30 @@
-img,#basic_info{
-    display: inline-block;
+body{
+    background-image: url('download.png');
 }
-
+#user_profile{
+    font-family:sans-serif;
+    margin: 1% 10%;
+    padding:0% 10%;
+    background-color:white;
+    border-radius: 10px;
+}
 #name{
-    font-size: 30px;
+    font-size: 2.5vw;
+    font-weight:bold;
 }
 #tagline{
-    font-size: 15px;
+    font-size:1.2vw;
 }
-img{
-    height:12vw;
-    width:10vw;
-    margin-right:40px;
+#jobs{
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+#dp{
+    height:16vw;
+    width:12vw;
+    padding-top:3vw;
 }
 #intro{
-    margin-left: 20%;
-    margin-right: 20%;
     padding-left:5%;
     padding-right: 5%;
     padding-bottom: 2%;
@@ -23,18 +32,91 @@ img{
 }
 #follow_option,#ask_question{
     display:inline-block;
-    margin-top:30px;
-    padding:5px;
+    margin-top:1.5vw;
+    font-size:1vw;
 }
 #ask_question{
-    margin-left: 10px;
+    margin-left: 4vw;
 }
-#ask_question:hover,#follow_option:hover{
-    background-color: grey;
-    border-radius: 5px;
+#fbu:hover,#abu:hover{
+    background-color: blue;
     color: white;
 }
-#full_profile{
-    margin-left:20%;
-    margin-right:20%;
+#fbu,#abu{
+    padding:1.2vw;
+    border-radius:10px;
+    font-weight:bold;
+    background-color: whitesmoke;
+    color: blue;
+}
+.feed_item{
+    padding:0.5vw 0;
+}
+.feed_item:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    padding-left:0.5vw;
+    cursor:pointer;
+}
+.article_author{
+    height:4vw;
+    width:4vw;
+    margin-top:1vw;
+}
+.author_name{
+    font-weight: bold;
+}
+#articles,#projects,#questions{
+    display: none;
+}
+#question_box{
+    display:none;
+}
+#ask{
+    background-color: blue;
+    color: white;
+    padding:10px;
+    border-radius:10px;
+}
+#thank_you{
+    display:none;
+}
+.like_button{
+    background-color: blue;
+    color: white;
+    padding:5px 20px;
+    border-radius:10px;
+}
+@media only screen and (max-width: 600px) {
+    #user_profile{
+        margin: 1% 5%;
+    }
+    #dp{
+        height:50vw;
+        width:50vw;
+    }
+    #name{
+        font-size: 8vw;
+    }
+    #tagline{
+        font-size:4vw;
+    }
+    #jobs{
+        font-size: 5vw;
+        font-weight: bold;
+    }
+    #ask_question{
+    margin-left: 15vw;
+    }
+    #follow_option,#ask_question{
+        font-size:2.5vw;
+    }
+    .feed_item{
+        padding:2vw 0;
+    }
+    #info{
+        float:left;
+    }
 }
