@@ -9,6 +9,7 @@ window.onload=()=>{
     articles.style.display="block"
 
 }
+//Adding Event Listeners
 articles_button.addEventListener('click',(e)=>{
     articles.style.display = "block"
     projects.style.display = "none"
